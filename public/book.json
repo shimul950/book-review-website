@@ -66,7 +66,7 @@
   },
   {
     "bookId": 6,
-    "bookName": "Sapiens: A Brief History of Humankind",
+    "bookName": "A Brief History of Humankind",
     "author": "Yuval Noah Harari",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9GxlFn8d7v8DqTHU0U-Fs3Md2U7j-o6cDkEES6_4t0uXbGioWZq9O-MHokuErkBIshc&usqp=CAU",
     "review": "A fascinating exploration of human history, evolution, and society.",
@@ -105,7 +105,7 @@
   },
   {
     "bookId": 9,
-    "bookName": "The Subtle Art of Not Giving a F*ck",
+    "bookName": "The Subtle Art of Not Giving",
     "author": "Mark Manson",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCCbHVi4SMccBQv7yjHCGpDvgfZuup3jR4x4dlfVYpSyVQ0tSzmpbat0UVblNF4FTOVPc&usqp=CAU",
     "review": "A refreshing self-help book that challenges conventional positivity.",
@@ -170,7 +170,7 @@
   },
   {
     "bookId": 14,
-    "bookName": "Harry Potter and the Sorcerer's Stone",
+    "bookName": "Harry Potter and the Sorcerer",
     "author": "J.K. Rowling",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcbz7NbTYP5Ee6VG3hEO82abJMvVsZKUGuSWxx5p3m6bzGLk9ayVOTkimJ2d56QUYfSEo&usqp=CAU",
     "review": "The magical adventure that started the legendary Harry Potter series.",

@@ -8,6 +8,7 @@ import { StrictMode } from 'react';
 import ListedBooks from './components/ListedBooks/ListedBooks.jsx';
 import PagesToRead from './components/PagesToRead/PagesToRead.jsx';
 import Banner from './components/Banner/Banner.jsx';
+import BookDetails from './components/BookDetails/BookDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path:'/banner',
         element:<Banner></Banner>
+      },
+      {
+        path:'/book/:id',
+        element:<BookDetails></BookDetails>,
+        loader:() => fetch('book.json')
       }
     ]
   }
