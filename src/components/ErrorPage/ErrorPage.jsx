@@ -4,8 +4,8 @@ import { Link } from "react-router";
 const ErrorPage = () => {
     return (
         <div>
-            <h1 className="text-5xl text-center">oppss!!!!</h1>
-            <button><Link to='/'>Go Back</Link></button>
+            <h1 className="5xl text-center">404 Page Not Found</h1>
+            <button className="flex justify-center"><Link to='/'>Go Back</Link></button>
         </div>
     );
 };
