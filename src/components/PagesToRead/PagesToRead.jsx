@@ -1,46 +1,40 @@
 
-import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import { getStoredReadBooks } from "../utility/localStorage";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 
 const data = [
-    { book: "Book A", pages: 200 },
-    { book: "Book B", pages: 150 },
-    { book: "Book C", pages: 499 },
-    { book: "Book D", pages: 250 },
-    { book: "Book E", pages: 100 },
-];
-const PagesToRead = () => {
-    const readedBooks = useLoaderData()
-    const [data,setData] =useState([])
+    { name: "Book A", pages: 120 },
+    { name: "Book B", pages: 400 },
+    { name: "Book C", pages: 90 },
+    { name: "Book D", pages: 150 },
+  ]
+const MyBarChart = () => {
+  // useState data
+  
 
-    useEffect(() => {
-        const storedReadBooksId = getStoredReadBooks();
-        if (readedBooks.length > 0) {
-            const readbooklisted = readedBooks?.filter(book => storedReadBooksId.includes(book.bookId));
-            setData(readbooklisted);
-
-        }
-    }, [readedBooks])
-
-
-    return (
-        <ResponsiveContainer width="100%" className='my-10' height={500}>
-            <BarChart
-                data={data}
-                margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="book" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="pages" fill="#82ca9d" />
-            </BarChart>
-        </ResponsiveContainer>
-    );
+  return (
+    <div className="w-full h-80 my-10">
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart data={data}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="pages" fill="#4F46E5" radius={[6, 6, 0, 0]} />
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
 };
 
-export default PagesToRead;
+export default MyBarChart;
